@@ -138,12 +138,19 @@ header .container {
     width: 100%;
 }
 
-.logo-text {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    letter-spacing: 0.05em;
+.logo-img {
+    max-height: 80px;
+    width: auto;
+    display: block;
+    transition: var(--transition);
+}
+
+.logo-img-footer {
+    max-height: 80px;
+    width: auto;
+    display: block;
+    margin-bottom: 2rem;
+    filter: brightness(0) invert(1); /* Poner logo en blanco para el footer oscuro */
 }
 
 nav ul {
@@ -481,15 +488,6 @@ footer {
     padding: 6rem 0 3rem;
 }
 
-.logo-text-footer {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 1.8rem;
-    color: white;
-    letter-spacing: 0.05em;
-    margin-bottom: 1.5rem;
-    display: block;
-}
 
 @media (max-width: 768px) {
     .container {
