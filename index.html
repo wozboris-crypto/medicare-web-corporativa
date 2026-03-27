@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corporación Medicare C.A. | Distribuidora Farmacéutica en Venezuela</title>
-    <meta name="description" content="Líderes en distribución y suministro farmacéutico en Caracas, Venezuela. Aliado estratégico para clínicas, farmacias y hospitales.">
+    <title>MEDISALUD | Soluciones Integrales en Insumos Médicos y Farmacéuticos</title>
+    <meta name="description" content="MEDISALUD es líder en la importación y distribución al mayor de productos farmacéuticos y material médico-quirúrgico en Venezuela. Excelencia logística y calidad garantizada.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -25,18 +25,19 @@
     <header>
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="assets/logo-medicare.png" alt="Corporación Medicare C.A. Logo" id="main-logo">
+                <span class="logo-text">MEDISALUD</span>
             </a>
             <nav id="desktop-nav">
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#nosotros">Empresa</a></li>
-                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#calidad">Calidad</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
             <div class="header-cta">
-                <a href="#contacto" class="btn btn-primary" style="padding: 0.7rem 1.5rem; font-size: 0.9rem;">Solicitar Cotización</a>
+                <a href="#contacto" class="btn btn-primary">Contacto Corporativo</a>
             </div>
         </div>
     </header>
@@ -44,94 +45,145 @@
     <main>
         <!-- Hero Section -->
         <section id="inicio" class="hero">
-            <div class="container animate" style="text-align: center;">
-                <h1 style="margin: 0 auto 1.5rem;">Suministro Farmacéutico Confiable para Venezuela</h1>
-                <p style="margin: 0 auto 2.5rem;">Su aliado estratégico en soluciones de salud. Distribución eficiente de medicamentos y material médico quirúrgico de alta calidad.</p>
-                <div class="hero-btns" style="justify-content: center;">
-                    <a href="#contacto" class="btn btn-primary">Solicitar Cotización</a>
-                    <a href="#" class="btn btn-outline" style="border-color: white; color: white;">Descargar Catálogo</a>
+            <div class="container animate">
+                <div class="hero-content">
+                    <span class="hero-badge">Estándares Internacionales</span>
+                    <h1>Excelencia en la Cadena de Suministro de Salud</h1>
+                    <p>Especialistas en la importación y distribución al mayor de productos farmacéuticos y material médico-quirúrgico con alcance nacional desde Caracas.</p>
+                    <div class="hero-btns">
+                        <a href="#nosotros" class="btn btn-primary">Nuestra Organización</a>
+                        <a href="#servicios" class="btn btn-outline" style="border-color: white; color: white;">Ver Servicios</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Stats Counter (Premium feel) -->
-        <div class="stats-bar" style="background: var(--accent-color); padding: 3rem 0; color: white;">
-            <div class="container grid" style="grid-template-columns: repeat(4, 1fr); text-align: center;">
+        <!-- Stats Counter -->
+        <div class="stats-bar">
+            <div class="container grid stats-grid">
                 <div>
-                    <h3 style="font-size: 2.5rem;">15+</h3>
-                    <p style="color: white; font-weight: 500;">Años de Trayectoria</p>
+                    <h3 class="stat-number">2022</h3>
+                    <p class="stat-label">Fundada en Caracas</p>
                 </div>
                 <div>
-                    <h3 style="font-size: 2.5rem;">500+</h3>
-                    <p style="color: white; font-weight: 500;">Clientes Satisfechos</p>
+                    <h3 class="stat-number">100%</h3>
+                    <p class="stat-label">Alcance Nacional</p>
                 </div>
                 <div>
-                    <h3 style="font-size: 2.5rem;">2000+</h3>
-                    <p style="color: white; font-weight: 500;">Productos en Inventario</p>
+                    <h3 class="stat-number">BPAD</h3>
+                    <p class="stat-label">Certificación Logística</p>
                 </div>
                 <div>
-                    <h3 style="font-size: 2.5rem;">24/48h</h3>
-                    <p style="color: white; font-weight: 500;">Entrega Logística</p>
+                    <h3 class="stat-number">FEFO</h3>
+                    <p class="stat-label">Gestión de Inventario</p>
                 </div>
             </div>
         </div>
 
-        <!-- Our Company Section -->
+        <!-- About Us Section -->
         <section id="nosotros" class="section">
-            <div class="container about-grid grid animate">
-                <div class="about-image">
-                    <img src="assets/products_collage.png" alt="Excelencia en salud" style="width: 100%; border-radius: 20px; box-shadow: 0 30px 60px rgba(0,0,0,0.1);">
-                </div>
-                <div class="about-content">
-                    <span style="color: var(--accent-color); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; font-size: 0.8rem; display: block; margin-bottom: 1rem;">Nuestra Empresa</span>
-                    <h2>Compromiso con la Salud de Venezuela</h2>
-                    <p>En <strong>Corporación Medicare C.A.</strong>, nos especializamos en la distribución de insumos médicos y farmacéuticos de la más alta calidad. Bajo el liderazgo estratégico de nuestro presidente, <strong>Carlos Mendoza</strong>, hemos consolidado una red logística robusta que garantiza el suministro ininterrumpido a clínicas, hospitales y cadenas de farmacias en todo el territorio nacional.</p>
-                    <p>Nuestra misión es ser el puente confiable entre los fabricantes de clase mundial y el sistema de salud venezolano, priorizando la integridad de cada producto y la eficiencia en la entrega.</p>
-                    
-                    <div class="president-badge">
-                        <h4>Carlos Mendoza</h4>
-                        <p style="font-size: 0.9rem; margin: 0;">Presidente de Corporación Medicare C.A.</p>
+            <div class="container">
+                <div class="about-grid grid animate">
+                    <div class="about-image">
+                        <img src="assets/products_collage.png" alt="Excelencia en salud" class="img-premium">
+                    </div>
+                    <div class="about-content">
+                        <span class="section-subtitle">Filosofía Institucional</span>
+                        <h2>Compromiso con la Salud Nacional</h2>
+                        <p><strong>MEDISALUD</strong> es una organización venezolana fundada en diciembre de 2022 en Caracas, especializada en la compra-venta, importación y distribución al mayor de productos farmacéuticos y material médico-quirúrgico.</p>
+                        
+                        <div class="philosophy-box">
+                            <div class="phil-item">
+                                <h4>Misión</h4>
+                                <p>Suministrar soluciones integrales de salud mediante la comercialización y distribución eficiente de insumos de alta calidad, garantizando el bienestar de la población venezolana.</p>
+                            </div>
+                            <div class="phil-item">
+                                <h4>Visión</h4>
+                                <p>Proyectarnos como la empresa líder del mercado farmacéutico nacional, destacándonos por nuestra innovación, competitividad logística y excelencia operativa.</p>
+                            </div>
+                        </div>
+
+                        <div class="values-grid">
+                            <div class="value-tag">Compromiso Social</div>
+                            <div class="value-tag">Ética Sanitaria</div>
+                            <div class="value-tag">Excelencia Operativa</div>
+                            <div class="value-tag">Transparencia</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Portfolio Section -->
-        <section id="portafolio" class="section portfolio">
+        <!-- Workflow / Services Section -->
+        <section id="servicios" class="section portfolio">
             <div class="container animate">
                 <div class="section-header">
-                    <h2>Portafolio de Productos</h2>
-                    <p style="max-width: 600px; margin: 1rem auto;">Contamos con una amplia gama de soluciones farmacéuticas y médicas divididas en categorías clave para facilitar su gestión.</p>
+                    <span class="section-subtitle">Operaciones Estratégicas</span>
+                    <h2>Nuestra Propuesta de Valor</h2>
+                    <p>Gestionamos procesos críticos bajo metodologías profesionales para asegurar la integridad de cada producto.</p>
                 </div>
                 
                 <div class="category-grid grid">
                     <div class="category-card">
-                        <i data-lucide="pill" style="color: #3B82F6;"></i>
-                        <h3>Medicamentos</h3>
-                        <p>Éticos, genéricos y de alta especialidad para tratamiento de diversas patologías y cuidados críticos.</p>
+                        <div class="card-icon"><i data-lucide="globe"></i></div>
+                        <h3>Procura Internacional</h3>
+                        <p>Selección técnica de fabricantes e industrias farmacéuticas de vanguardia para asegurar el cumplimiento de normativas sanitarias globales.</p>
+                        <ul class="card-list">
+                            <li>Aliados estratégicos globales</li>
+                            <li>Cumplimiento técnico riguroso</li>
+                        </ul>
                     </div>
                     <div class="category-card">
-                        <i data-lucide="activity" style="color: #EF4444;"></i>
-                        <h3>Material Médico</h3>
-                        <p>Insumos quirúrgicos, descartables y equipos de diagnóstico para la operación diaria de centros de salud.</p>
+                        <div class="card-icon"><i data-lucide="warehouse"></i></div>
+                        <h3>Almacenamiento Especializado</h3>
+                        <p>Control estricto de temperatura y humedad. Aplicamos metodología <strong>FEFO</strong> (First Expired, First Out) para garantizar trazabilidad y vigencia.</p>
+                        <ul class="card-list">
+                            <li>Control de atmósfera</li>
+                            <li>Trazabilidad total (FEFO)</li>
+                        </ul>
                     </div>
                     <div class="category-card">
-                        <i data-lucide="beaker" style="color: #10B981;"></i>
-                        <h3>Laboratorio</h3>
-                        <p>Reactivos, cristalería y equipos especializados para laboratorios clínicos y de investigación.</p>
-                    </div>
-                    <div class="category-card">
-                        <i data-lucide="thermometer" style="color: #F59E0B;"></i>
-                        <h3>Cadena de Frío</h3>
-                        <p>Manejo especializado de biológicos y vacunas con riguroso control de temperatura y trazabilidad.</p>
+                        <div class="card-icon"><i data-lucide="truck"></i></div>
+                        <h3>Distribución y Entrega</h3>
+                        <p>Logística de vanguardia con alcance nacional, operando bajo el cumplimiento estricto de las <strong>Buenas Prácticas de Almacenamiento y Distribución (BPAD)</strong>.</p>
+                        <ul class="card-list">
+                            <li>Seguridad en cadena de suministro</li>
+                            <li>Entregas a nivel nacional</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <div style="text-align: center; margin-top: 4rem;">
-                    <a href="#" class="btn btn-outline" style="border-width: 1px;">
-                        <i data-lucide="download" style="display: inline-block; vertical-align: middle; width: 18px; margin-right: 8px;"></i>
-                        Descargar Catálogo Completo (PDF)
-                    </a>
+            </div>
+        </section>
+
+        <!-- Quality & Compliance -->
+        <section id="calidad" class="section quality-section">
+            <div class="container">
+                <div class="quality-grid grid animate">
+                    <div class="quality-content">
+                        <span class="section-subtitle">Confianza y Cumplimiento</span>
+                        <h2>Soberanía Sanitaria y Estándares de Calidad</h2>
+                        <p>Nuestras operaciones se rigen por los más altos niveles de gestión internacional y local, asegurando que cada insumo cumpla con su propósito terapéutico de forma segura.</p>
+                        
+                        <div class="compliance-badges">
+                            <div class="badge-item">
+                                <i data-lucide="check-circle"></i>
+                                <span>ISO 9001:2015 (Calidad)</span>
+                            </div>
+                            <div class="badge-item">
+                                <i data-lucide="check-circle"></i>
+                                <span>ISO 13485:2016 (Dispositivos Médicos)</span>
+                            </div>
+                            <div class="badge-item">
+                                <i data-lucide="shield-check"></i>
+                                <span>Regulación MPPS / SACS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quality-visual">
+                        <div class="iso-card">
+                            <p>Toda promoción de medicamentos en nuestra plataforma se orienta al <strong>uso racional</strong> y la veracidad científica, respetando la privacidad absoluta de datos institucionales.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -141,66 +193,71 @@
             <div class="container">
                 <div class="contact-grid grid">
                     <div class="contact-info">
-                        <h2 style="font-size: 2.8rem; line-height: 1.1; margin-bottom: 2rem;">¿Listo para ser nuestro aliado comercial?</h2>
-                        <p style="font-size: 1.1rem; margin-bottom: 3rem;">Complete el formulario y un consultor especializado se pondrá en contacto con usted en menos de 24 horas para abrir su cuenta corporativa.</p>
+                        <span class="section-subtitle">Contacto Especializado</span>
+                        <h2 style="font-size: 2.8rem; line-height: 1.1; margin-bottom: 2rem;">Impulsamos la Salud de su Institución</h2>
+                        <p style="font-size: 1.1rem; margin-bottom: 3rem;">Inicie una alianza estratégica con MEDISALUD. Nuestro equipo le brindará atención profesional orientada a la excelencia operativa.</p>
                         
-                        <div>
-                            <h3>Ventas y Cotizaciones</h3>
-                            <p><a href="mailto:ventas@medicareve.com" style="color: inherit; text-decoration: none;">ventas@medicareve.com</a></p>
-                        </div>
-                        <div>
-                            <h3>Atención al Cliente</h3>
-                            <p>+58 (212) 555-0000</p>
-                        </div>
-                        <div style="margin-top: 3rem;">
-                            <img src="assets/warehouse_hero.png" alt="Almacén Medicare" style="width: 100%; border-radius: 12px;">
+                        <div class="contact-channels">
+                            <div class="channel">
+                                <i data-lucide="mail"></i>
+                                <div>
+                                    <h5>Canal Corporativo</h5>
+                                    <p>atencion@medicareve.com</p>
+                                </div>
+                            </div>
+                            <div class="channel">
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <h5>Sede Caracas</h5>
+                                    <p>Distrito Capital, Venezuela</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
                     <form id="quote-form">
                         <div style="margin-bottom: 2.5rem;">
-                            <h3 style="margin-bottom: 0.5rem;">Solicitud de Cotización / Nueva Cuenta</h3>
-                            <p>Por favor, proporcione los datos de su institución.</p>
+                            <h3 style="margin-bottom: 0.5rem;">Solicitud de Registro / Cotización</h3>
+                            <p>Exclusivo para instituciones del sector salud.</p>
                         </div>
                         
                         <div class="grid" style="grid-template-columns: 1fr 1fr;">
                             <div class="input-group">
-                                <label for="nombre">Nombre de Contacto</label>
-                                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                                <label for="institucion">Razón Social</label>
+                                <input type="text" id="institucion" name="institucion" required placeholder="Ej. Clínica San Rafael C.A.">
                             </div>
                             <div class="input-group">
-                                <label for="institucion">Razon Social / Institución</label>
-                                <input type="text" id="institucion" name="institucion" required placeholder="Ej. Farmacia La Esperanza C.A.">
+                                <label for="rif_inst">RIF Jurídico</label>
+                                <input type="text" id="rif_inst" name="rif_inst" required placeholder="J-00000000-0">
                             </div>
                         </div>
                         
                         <div class="grid" style="grid-template-columns: 1fr 1fr;">
                             <div class="input-group">
                                 <label for="email">Correo Institucional</label>
-                                <input type="email" id="email" name="email" required placeholder="nombre@clinica.com">
+                                <input type="email" id="email" name="email" required placeholder="compras@institucion.com">
                             </div>
                             <div class="input-group">
-                                <label for="telefono">Teléfono de Contacto</label>
-                                <input type="tel" id="telefono" name="telefono" required placeholder="+58 412 0000000">
+                                <label for="telefono">Teléfono Corporativo</label>
+                                <input type="tel" id="telefono" name="telefono" required placeholder="+58 212 0000000">
                             </div>
                         </div>
                         
                         <div class="input-group">
-                            <label for="categoria">Categoría de Interés</label>
+                            <label for="categoria">Línea de Interés</label>
                             <select id="categoria" name="categoria">
-                                <option value="medicamentos">Medicamentos</option>
-                                <option value="material">Material Médico Quirúrgico</option>
-                                <option value="laboratorio">Insumos de Laboratorio</option>
-                                <option value="otros">Otros</option>
+                                <option value="medicamentos">Productos Farmacéuticos</option>
+                                <option value="material">Material Médico-Quirúrgico</option>
+                                <option value="logistica">Alianzas Logísticas</option>
                             </select>
                         </div>
                         
                         <div class="input-group">
-                            <label for="mensaje">Detalles de su Solicitud</label>
-                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describa brevemente los productos que requiere..."></textarea>
+                            <label for="mensaje">Requerimiento Específico</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indique los detalles de su solicitud técnica..."></textarea>
                         </div>
                         
-                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.2rem;">Enviar Solicitud</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.2rem;">Enviar a Revisión</button>
                     </form>
                 </div>
             </div>
@@ -213,39 +270,33 @@
             <div class="footer-grid grid">
                 <div class="footer-about">
                     <div class="footer-logo">
-                        <img src="assets/logo-medicare.png" alt="Medicare Logo White">
+                        <span class="logo-text-footer">MEDISALUD</span>
                     </div>
                     <p class="footer-text">
-                        <strong>Corporación Medicare C.A.</strong><br>
-                        Distribución y Suministro Farmacéutico de Alta Tecnología.<br>
-                        Caracas, Venezuela.
+                        Organización venezolana fundada en Caracas, dedicada a la excelencia en el suministro farmacéutico nacional.
                     </p>
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Navegación</h4>
+                    <h4>Institucional</h4>
                     <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#nosotros">Empresa</a></li>
-                        <li><a href="#portafolio">Portafolio</a></li>
-                        <li><a href="#contacto">Contacto comercial</a></li>
+                        <li><a href="#nosotros">Nuestra Filosofía</a></li>
+                        <li><a href="#servicios">Propuesta de Valor</a></li>
+                        <li><a href="#calidad">Calidad y Normativa</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Datos Fiscales</h4>
-                    <p class="footer-text" style="font-size: 0.9rem;">
-                        <strong>RIF:</strong> J-30839271-5<br><br>
-                        <strong>Dirección Fiscal:</strong><br>
-                        Calle El Porvenir con Calle Los Jardines,<br>
-                        Qta. Gertrudis No. 23 Urb. La Florida,<br>
-                        Caracas, Venezuela, Código Postal 1050
+                    <h4>Seguridad y Privacidad</h4>
+                    <p class="footer-text" style="font-size: 0.85rem;">
+                        Riguroso cumplimiento del protocolo de protección de datos institucionales. Prohibida la publicación de datos personales de directores y empleados. Suministro orientado al uso racional de medicamentos.
                     </p>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 Corporación Medicare C.A. Todos los derechos reservados.</p>
+                <p>&copy; 2026 MEDISALUD. Todos los derechos reservados. Caracas, Venezuela.</p>
             </div>
         </div>
     </footer>
@@ -257,7 +308,7 @@
         // Simple form handling
         document.getElementById('quote-form')?.addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Gracias por su interés. Un consultor de Corporación Medicare se comunicará con usted a la brevedad.');
+            alert('Su solicitud ha sido enviada con éxito al equipo de MEDISALUD. Evaluaremos sus datos institucionales y le contactaremos en un plazo de 24 horas.');
             this.reset();
         });
         
@@ -266,9 +317,11 @@
             const header = document.querySelector('header');
             if (window.scrollY > 50) {
                 header.style.height = '80px';
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
                 header.style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)';
             } else {
                 header.style.height = '100px';
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
                 header.style.boxShadow = 'none';
             }
         });
