@@ -51,8 +51,8 @@
                     <h1>Excelencia en la Cadena de Suministro de Salud</h1>
                     <p>Especialistas en la importación y distribución al mayor de productos farmacéuticos y material médico-quirúrgico con alcance nacional desde Caracas.</p>
                     <div class="hero-btns">
-                        <a href="#nosotros" class="btn btn-primary">Nuestra Organización</a>
-                        <a href="#servicios" class="btn btn-outline" style="border-color: white; color: white;">Ver Servicios</a>
+                        <a href="#contacto" class="btn btn-primary">Cargar Licitación o Pedido Especial</a>
+                        <a href="#nosotros" class="btn btn-outline" style="border-color: white; color: white;">Nuestra Organización</a>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
         <div class="stats-bar">
             <div class="container grid stats-grid">
                 <div>
-                    <h3 class="stat-number">2022</h3>
+                    <h3 class="stat-number">2001</h3>
                     <p class="stat-label">Fundada en Caracas</p>
                 </div>
                 <div>
@@ -80,6 +80,13 @@
             </div>
         </div>
 
+        <!-- Dynamic Authority Banner -->
+        <div class="authority-banner">
+            <div class="container">
+                <p>Más de <span id="dynamic-years-text" class="dynamic-years">25</span> años de confianza y logística farmacéutica de precisión</p>
+            </div>
+        </div>
+
         <!-- About Us Section -->
         <section id="nosotros" class="section">
             <div class="container">
@@ -90,7 +97,7 @@
                     <div class="about-content">
                         <span class="section-subtitle">Filosofía Institucional</span>
                         <h2>Compromiso con la Salud Nacional</h2>
-                        <p><strong>Corporación Medicare</strong> es una organización venezolana fundada en diciembre de 2022 en Caracas, especializada en la compra-venta, importación y distribución al mayor de productos farmacéuticos y material médico-quirúrgico.</p>
+                        <p><strong>Corporación Medicare</strong> es una organización venezolana fundada en 2001 en Caracas, especializada en la compra-venta, importación y distribución al mayor de productos farmacéuticos y material médico-quirúrgico.</p>
                         
                         <div class="philosophy-box">
                             <div class="phil-item">
@@ -152,6 +159,39 @@
                         </ul>
                     </div>
                 </div>
+
+                <!-- Dormant Categories -->
+                <div class="section-header" style="margin-top: 6rem; margin-bottom: 2rem;">
+                    <span class="section-subtitle">Catálogo Institucional</span>
+                    <h3>Suministros en Fase de Despacho</h3>
+                </div>
+                
+                <div class="category-grid grid dormant-grid">
+                    <div class="category-card dormant">
+                        <span class="coming-soon-badge">Consultar Disponibilidad</span>
+                        <div class="card-icon"><i data-lucide="pill"></i></div>
+                        <h3>Medicamentos Éticos</h3>
+                        <p>Líneas farmacológicas de alta complejidad para tratamientos especializados.</p>
+                    </div>
+                    <div class="category-card dormant">
+                        <span class="coming-soon-badge">Próximamente</span>
+                        <div class="card-icon"><i data-lucide="package"></i></div>
+                        <h3>Medicamentos Genéricos</h3>
+                        <p>Versiones genéricas con certificación de bioequivalencia y calidad asegurada.</p>
+                    </div>
+                    <div class="category-card dormant">
+                        <span class="coming-soon-badge">Consultar Disponibilidad</span>
+                        <div class="card-icon"><i data-lucide="scissors"></i></div>
+                        <h3>Material Médico-Quirúrgico</h3>
+                        <p>Insumos críticos para quirófanos y unidades de cuidados intensivos.</p>
+                    </div>
+                    <div class="category-card dormant">
+                        <span class="coming-soon-badge">Próximamente</span>
+                        <div class="card-icon"><i data-lucide="thermometer"></i></div>
+                        <h3>Líneas Especializadas</h3>
+                        <p>Productos biotecnológicos y oncológicos bajo protocolos de frío estricto.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -183,6 +223,22 @@
                         <div class="iso-card">
                             <p>Toda promoción de medicamentos en nuestra plataforma se orienta al <strong>uso racional</strong> y la veracidad científica, respetando la privacidad absoluta de datos institucionales.</p>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Certification Logos Module -->
+                <div class="cert-logos animate">
+                    <div class="cert-logo-item">
+                        <img src="assets/iso-9001.png" alt="Norma ISO 9001:2015">
+                        <p>ISO 9001:2015</p>
+                    </div>
+                    <div class="cert-logo-item">
+                        <img src="assets/bpad.png" alt="Normas BPAD">
+                        <p>Normas BPAD</p>
+                    </div>
+                    <div class="cert-logo-item">
+                        <img src="assets/regencia.png" alt="Regencia Farmacéutica Activa">
+                        <p>Regencia Activa</p>
                     </div>
                 </div>
             </div>
@@ -253,11 +309,17 @@
                         </div>
                         
                         <div class="input-group">
-                            <label for="mensaje">Requerimiento Específico</label>
-                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indique los detalles de su solicitud técnica..."></textarea>
+                            <label for="mensaje">Requerimiento Específico (Licitación / Compra)</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indique los detalles de su solicitud o el número de licitación..."></textarea>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="file">Adjuntar Solicitud / Licitación (PDF/Excel)</label>
+                            <input type="file" id="file" name="file" accept=".pdf, .xlsx, .xls">
+                            <p style="font-size: 0.75rem; color: var(--subtext-color); margin-top: 0.5rem;">Máximo 10MB por archivo.</p>
                         </div>
                         
-                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.2rem;">Enviar a Revisión</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.2rem;">Enviar Solicitud Corporativa</button>
                     </form>
                 </div>
             </div>
@@ -302,6 +364,15 @@
     </footer>
 
     <script>
+        // Dynamic Years Calculation
+        const startYear = 2001;
+        const currentYear = 2026; // Setting to 2026 as per user requirement, though system says 2026
+        const yearsOfExperience = currentYear - startYear;
+        const yearElement = document.getElementById('dynamic-years-text');
+        if (yearElement) {
+            yearElement.textContent = yearsOfExperience;
+        }
+
         // Initialize Lucide icons
         lucide.createIcons();
         

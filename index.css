@@ -1,7 +1,7 @@
 :root {
     --primary-color: #0F172A; /* Slate 900 */
-    --accent-color: #2563EB; /* Blue 600 */
-    --accent-light: #DBEAFE; /* Blue 100 */
+    --accent-color: #004a99; /* Azul Corporativo Medicare */
+    --accent-light: #e6f0ff; 
     --success-color: #10B981;
     --text-color: #1E293B; /* Slate 800 */
     --subtext-color: #64748B; /* Slate 500 */
@@ -246,6 +246,23 @@ nav a:hover {
     letter-spacing: 0.1em;
 }
 
+/* Authority Banner */
+.authority-banner {
+    background: linear-gradient(90deg, #004a99 0%, #003366 100%);
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(0, 74, 153, 0.2);
+}
+
+.authority-banner .dynamic-years {
+    font-size: 1.5rem;
+    color: #ffd700; /* Dorado para resaltar autoridad */
+    margin: 0 0.3rem;
+}
+
 /* About Section */
 .img-premium {
     width: 100%;
@@ -325,6 +342,37 @@ nav a:hover {
     border-color: var(--accent-light);
 }
 
+/* Dormant Categories */
+.dormant-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 4rem;
+}
+
+.category-card.dormant {
+    opacity: 0.7;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-card.dormant:hover {
+    transform: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.coming-soon-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--subtext-color);
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 .card-icon {
     width: 60px;
     height: 60px;
@@ -384,6 +432,38 @@ nav a:hover {
 
 .badge-item i {
     color: var(--success-color);
+}
+
+.cert-logos {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.cert-logo-item {
+    text-align: center;
+    width: 150px;
+}
+
+.cert-logo-item img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: var(--transition);
+}
+
+.cert-logo-item:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.cert-logo-item p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: var(--primary-color);
 }
 
 .iso-card {
